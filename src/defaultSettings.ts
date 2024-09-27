@@ -26,7 +26,12 @@ export type settingsKeys =
     | 'forceClose'
     | 'shortcut'
     | 'dataUsage'
-    | 'asn';
+    | 'asn'
+    | 'closeSingBox'
+    | 'closeHelper'
+    | 'singBoxMTU'
+    | 'singBoxGeo'
+    | 'singBoxGeoBlock';
 
 const date = new Date();
 const getTimeZone = date?.toString().toLowerCase();
@@ -59,7 +64,12 @@ export const defaultSettings = {
     forceClose: false,
     shortcut: false,
     dataUsage: false,
-    asn: 'UNK'
+    asn: 'UNK',
+    closeSingBox: true,
+    closeHelper: true,
+    singBoxMTU: 9000,
+    singBoxGeo: '',
+    singBoxGeoBlock: true
 };
 
 export const countries: { value: string; label: string }[] = [
@@ -114,4 +124,19 @@ export const dnsServers: { value: string; label: string }[] = [
     { value: '8.8.8.8', label: 'Google' },
     { value: '94.140.14.14', label: 'Adguard' },
     { value: '94.140.14.15', label: 'Adguard Family' }
+];
+
+export const singBoxGeo: { region: string; geoIp: string; geoSite: string }[] = [
+    { region: 'None', geoIp: '', geoSite: '' },
+    {
+        region: 'IR',
+        geoIp: 'https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs',
+        geoSite:
+            'https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs'
+    },
+    {
+        region: 'CN',
+        geoIp: 'https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs',
+        geoSite: 'https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs'
+    }
 ];

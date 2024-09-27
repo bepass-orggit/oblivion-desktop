@@ -23,7 +23,8 @@ const deutsch: Language = {
         drawer_update_label: 'Neues Update',
         drawer_speed_test: 'Geschwindigkeitstest',
         drawer_about: 'Über',
-        drawer_lang: 'Sprache ändern'
+        drawer_lang: 'Sprache ändern',
+        drawer_singbox: 'Singbox-Einstellungen'
     },
     toast: {
         ip_check_please_wait:
@@ -100,14 +101,22 @@ const deutsch: Language = {
         routing_rules_disabled: 'Deaktiviert',
         routing_rules_items: 'Elemente',
         profile: 'Profil',
-        profile_desc: 'Von Ihnen gespeicherte Endpunkte'
+        profile_desc: 'Von Ihnen gespeicherte Endpunkte',
+        singbox: 'Singbox-Einstellungen',
+        close_singbox: 'Betrieb stoppen',
+        close_singbox_desc: 'Singbox bei Trennung automatisch schließen',
+        close_helper: 'Helfer stoppen',
+        close_helper_desc: 'Helper beim Beenden automatisch schließen',
+        mtu: 'MTU-Wert',
+        mtu_desc: 'Die maximale Übertragungseinheit festlegen'
     },
     tabs: {
         home: 'Verbinden',
         warp: 'Warp',
         network: 'Netzwerk',
         scanner: 'Scanner',
-        app: 'App'
+        app: 'App',
+        singbox: 'Singbox'
     },
     modal: {
         endpoint_title: 'Endpunkt',
@@ -129,6 +138,9 @@ const deutsch: Language = {
         profile_name: 'Titel',
         profile_endpoint: 'Endpunkt',
         profile_limitation: (value) => `Sie können maximal ${value} Endpunkte hinzufügen.`,
+        mtu_title: 'MTU-Wert',
+        mtu_desc:
+            'Die maximale Übertragungseinheit (MTU) bezieht sich auf die maximale Größe von Datenpaketen, die zwischen 1000 und 9999 eingestellt werden sollte.',
         confirm: 'Ich bestätige',
         update: 'Update',
         cancel: 'Abbrechen'
@@ -157,7 +169,9 @@ const deutsch: Language = {
         error_wp_not_found: 'Die Datei warp-plus befindet sich nicht neben dem Anwendungspaket.',
         error_wp_stopped: 'Die Datei warp-plus hat ein Problem beim Ausführen!',
         error_connection_failed: 'Verbindung zu 1.1.1.1 war nicht möglich.',
-        error_country_failed: 'Verbindung zum ausgewählten Land nicht möglich.'
+        error_country_failed: 'Verbindung zum ausgewählten Land nicht möglich.',
+        error_singbox_failed_stop: 'Sing-Box konnte nicht gestoppt werden!',
+        error_singbox_failed_start: 'Sing-Box konnte nicht gestartet werden!'
     },
     about: {
         title: 'Über',

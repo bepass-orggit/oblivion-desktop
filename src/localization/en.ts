@@ -23,7 +23,8 @@ const english: Language = {
         drawer_update_label: 'New Update',
         drawer_speed_test: 'Speed Test',
         drawer_about: 'About App',
-        drawer_lang: 'Language Change'
+        drawer_lang: 'Language Change',
+        drawer_singbox: 'Singbox Settings'
     },
     toast: {
         ip_check_please_wait: 'Please wait a few seconds to retry the check!',
@@ -98,14 +99,22 @@ const english: Language = {
         routing_rules_disabled: 'Disabled',
         routing_rules_items: 'Items',
         profile: 'Profile',
-        profile_desc: 'Endpoints saved by you'
+        profile_desc: 'Endpoints saved by you',
+        singbox: 'Singbox Settings',
+        close_singbox: 'Stop operation',
+        close_singbox_desc: 'Automatically close sing-box on disconnect',
+        close_helper: 'Stop helper',
+        close_helper_desc: 'Automatically close helper on exit',
+        mtu: 'MTU Value',
+        mtu_desc: 'Set the Maximum Transmission Unit'
     },
     tabs: {
         home: 'Connect',
         warp: 'Warp',
         network: 'Network',
         scanner: 'Scanner',
-        app: 'App'
+        app: 'App',
+        singbox: 'Singbox'
     },
     modal: {
         endpoint_title: 'Endpoint',
@@ -127,6 +136,9 @@ const english: Language = {
         profile_name: 'Title',
         profile_endpoint: 'Endpoint',
         profile_limitation: (value) => `You can add a maximum of ${value} endpoints.`,
+        mtu_title: 'MTU Value',
+        mtu_desc:
+            'Maximum Transmission Unit (MTU) refers to the maximum size of data packets, which should be set between 1000 and 9999.',
         confirm: 'I confirm',
         update: 'Update',
         cancel: 'Cancel'
@@ -154,7 +166,9 @@ const english: Language = {
         error_wp_not_found: 'The warp-plus file is not located alongside the application package!',
         error_wp_stopped: 'The warp-plus file has encountered an issue running!',
         error_connection_failed: 'Connection to 1.1.1.1 was not possible.',
-        error_country_failed: 'Cannot connect to the selected country.'
+        error_country_failed: 'Cannot connect to the selected country.',
+        error_singbox_failed_stop: 'Failed to stop Sing-Box!',
+        error_singbox_failed_start: 'Failed to start Sing-Box!'
     },
     about: {
         title: 'About App',
